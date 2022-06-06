@@ -1,0 +1,49 @@
+package functions;
+
+import java.util.Scanner;
+
+public class demo_fun {
+
+	public static void main(String[] args) 
+	{
+		sub();
+		hello();
+		add();
+		hello();
+		sub();
+	}	
+		public static void hello()
+		{
+			System.out.println("hii good morning");
+		}
+		
+		
+		public static void add()
+		{
+			Scanner sc=new Scanner (System.in);
+			System.out.println("Enter two number:");
+			int num,num1,res;
+			num=sc.nextInt();
+			num1=sc.nextInt();
+			res=num+num1;
+			hello();
+			System.out.println("Addition of two numbers:" +res);
+			
+			
+		}
+		public static void sub()
+		{
+			Scanner sc=new Scanner(System.in);
+			int a,b,c;
+			System.out.println("enter nos");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			c=a-b;
+			System.out.println("Subtraction of two nos:" +c);
+			
+		}
+		
+
+	}
+
+
